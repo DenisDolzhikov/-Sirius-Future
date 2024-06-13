@@ -12,6 +12,7 @@ import { FeedbackPage } from './pages/feedbackPage/FeedbackPage';
 import { SettingsPage } from './pages/settingsPage/SettingsPage';
 import { QuestionsPage } from './pages/questionsPage/QuestionsPage';
 import { ErrorPage } from './pages/errorPage/ErrorPage';
+import { NotFoundPage } from './pages/notFoundPage/NotFoundPage';
 
 import { useAppSelector } from './hooks/useAppSelector';
 
@@ -20,7 +21,8 @@ const IsLoggedIn = () => useAppSelector(state => state.auth.isLoggedIn);
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />} errorElement={<ErrorPage />}>
-    <Route index element={IsLoggedIn() ? <HomePage /> : <LoginPage />} />
+    {/* <Route index element={IsLoggedIn() ? <HomePage /> : <LoginPage />} /> */}
+    <Route index element={<HomePage />} />
     <Route path='schedule' element={<SchedulePage />} />
     <Route path='payment' element={<PaymentPage />} />
     <Route path='adventage' element={<AdventagesPage />} />
@@ -29,6 +31,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='feedback' element={<FeedbackPage />} />
     <Route path='settings' element={<SettingsPage />} />
     <Route path='questions' element={<QuestionsPage />} />
+    <Route path='*' element={<NotFoundPage />} />
   </Route>
 ));
 

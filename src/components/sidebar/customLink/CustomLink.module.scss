@@ -1,0 +1,25 @@
+.active {
+  background-color: #8D7FC7;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.pending {
+
+}
+
+a {
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+a:active,
+a:focus {
+  border:0;
+  outline: none 
+}
+
+a:hover:not(.active) {
+  background-color: #d0c7f8;
+  color: #ffffff;
+}

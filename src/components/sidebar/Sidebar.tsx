@@ -7,6 +7,7 @@ import WebFont from 'webfontloader';
 import CustomLink from './customLink/CustomLink';
 import { Logo } from './logo/Logo';
 import { MenuIcon } from './menuIcon/MenuIcon';
+import { Referal } from '../referal/Referal';
 
 import homeIcon from '../../assets/icons/sidebar/homeIcon.svg';
 import sheduleIcon from '../../assets/icons/sidebar/shedulePageIcon.svg';
@@ -30,7 +31,7 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <Logo />
-      <nav>
+      <nav className={styles.sidebarListContainer}>
         <ul className={styles.sidebarList}>
           <li>
             <CustomLink to="/">
@@ -88,6 +89,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </nav>
+      <Referal />
     </aside>
   );
 }

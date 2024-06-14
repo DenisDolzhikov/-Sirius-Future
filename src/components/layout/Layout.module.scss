@@ -1,0 +1,47 @@
+.fullScreenBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FDFDFF;
+}
+
+.sidebarBox {
+  width: 17.7%;
+  margin-top: 30px;
+}
+
+.mainBox {
+  width: 82.3%;
+  min-height: 95vh;
+}
+
+.outletBox {
+  padding: 30px;
+}
+
+.footerBox {
+  width: 100%;
+  min-height: 5hv;
+}
+
+// .fullScreenBox {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .headerBox {
+//   width: 80%;
+// }
+
+// .mainBox {
+//   display: flex;
+// }
+
+// .outlet {
+//   padding-top: 60px;
+//   padding-right: 70px;
+//   padding-left: 40px;
+// }
+
+// .sidebarBox {
+  
+// }

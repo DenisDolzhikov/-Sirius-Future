@@ -1,0 +1,40 @@
+.referalBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 146px;
+  border-radius: 15px;
+  font-family: 'Circe Rounded';
+  align-self: center;
+  padding: 16px 30px 10px 20px;
+  margin-bottom: 20px;
+  // background: #FDFDFF url('../../assets/icons/sidebar/referal/referalPageIcon.svg') right bottom no-repeat 50%;
+  background-color: #FDFDFF;
+  background-image: url('../../assets/icons/sidebar/referal/referalPageIcon.svg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.referalTitle {
+  margin: 0;
+  font-size: 16px;
+}
+
+.referalParagraph {
+  font-size: 10px;
+  text-align: left;
+  font-family: 'Circe Rounded';
+}
+
+.button {
+  display: flex;
+  align-self: start;
+  justify-content: center;
+  align-items: center;
+  color: #323854;
+  font-size: 12px;
+  width: 68px;
+  height: 32px;
+  border-radius: 15px;
+  background-color: #D8ECFF;
+}

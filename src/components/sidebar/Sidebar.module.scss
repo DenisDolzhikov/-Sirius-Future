@@ -1,16 +1,11 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  // width: 236px;
-  // width: 17.7%;
+  width: 236px;
   padding-top: 24px;
   background-color: #EEEEFF;
   color: #434B74;
   border-radius: 30px;
-}
-
-.sidebarListContainer {
-  margin-bottom: 20px;
 }
 
 .sidebarList {
@@ -35,6 +30,10 @@
     font-size: 16px;
     line-height: 21px;
     font-family: 'Circe Rounded', sans-serif;
+  }
+
+  a:hover {
+    background-color: #957cfc;
   }
 
   li:last-child a {

@@ -12,7 +12,7 @@ import { FeedbackPage } from './pages/feedbackPage/FeedbackPage';
 import { SettingsPage } from './pages/settingsPage/SettingsPage';
 import { QuestionsPage } from './pages/questionsPage/QuestionsPage';
 import { ReferalPage } from './pages/referalPage/ReferalPage';
-import { ErrorPage } from './pages/errorPage/ErrorPage';
+// import { ErrorPage } from './pages/errorPage/ErrorPage';
 import { NotFoundPage } from './pages/notFoundPage/NotFoundPage';
 
 import { RequireAuth } from './hooks/requireAuth';

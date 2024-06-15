@@ -1,0 +1,19 @@
+.languageSwitcher {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Circe Rounded';
+  font-weight: 400;
+  font-size: 16px;
+  color: #79747F;
+}
+
+.activeLanguage {
+  color: #7362BC;
+  font-size: 24px;
+}
+
+.languageItem:first-child {
+  margin-right: 8px;
+}

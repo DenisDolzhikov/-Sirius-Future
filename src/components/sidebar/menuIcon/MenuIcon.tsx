@@ -1,14 +1,13 @@
-import { FC } from "react";
 import styles from './MenuIcon.module.scss';
 
 type Props = {
   src: string;
 }
 
-const MenuIcon:FC<Props> = ({ src }) => {
+const MenuIcon = ({ src }: Props) => {
   return (
     <img src={src} alt="" className={styles.menuIcon} />
   )
 }
 
-export { MenuIcon }
+export { MenuIcon };

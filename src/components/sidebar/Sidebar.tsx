@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 
 import styles from './Sidebar.module.scss';
-import WebFont from 'webfontloader';
 
 import CustomLink from './customLink/CustomLink';
 import { Logo } from './logo/Logo';
@@ -20,13 +19,6 @@ import optionsIcon from '../../assets/icons/sidebar/optionsIcon.svg';
 import questionsIcon from '../../assets/icons/sidebar/questionsIcon.svg';
 
 const Sidebar = () => {
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Circe Rounded'],
-      }
-    })
-  }, []);
 
   return (
     <aside className={styles.sidebar}>
@@ -83,7 +75,7 @@ const Sidebar = () => {
           </li>
           <li>
             <CustomLink to="/questions">
-              <MenuIcon src={paymentIcon} />
+              <MenuIcon src={questionsIcon} />
               Вопросы
             </CustomLink>
           </li>

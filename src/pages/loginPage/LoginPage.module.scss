@@ -1,19 +1,12 @@
 .loginPage {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   margin: auto 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .loginPageWrapper {
-  display: flex;
-  flex-direction: column;
-  width: 340px;
-  
-}
-
-.loginForm {
-  display: flex;
-  flex-direction: column;
+  height: 60vh;
 }

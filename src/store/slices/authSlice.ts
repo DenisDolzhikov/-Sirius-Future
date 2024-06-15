@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ReactNode } from 'react';
 
 interface User {
   username: string;

@@ -1,0 +1,41 @@
+.loginPageWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Circe Rounded';
+  color: #79747F;
+}
+
+.loginFormEmailInput,
+.loginFormPasswordInput {
+  padding: 10px 12px;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  margin-bottom: 5%;
+  outline: none;
+}
+
+// .loginFormEmailInput:active,
+.loginFormEmailInput:focus,
+.loginFormPasswordInput:focus {
+  background-color: #fdfcff;
+}
+
+.loginFormCheckboxLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11%;
+}
+
+.loginFormCheckbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C8C5CD;
+  margin-right: 8px;
+}

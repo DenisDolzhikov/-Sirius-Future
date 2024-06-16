@@ -34,7 +34,7 @@
 
 .dropDownContainer {
   position: absolute;
-  bottom: -272px;
+  bottom: -302px;
   right: -21px;
   width: 250px;
   height: 262px;
@@ -72,8 +72,14 @@
 .drowDownTitle {
   font-family: 'Circe Rounded';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 21.6px;
+  color: #323854;
+  padding-left: 25px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .menuUsersList {
@@ -81,6 +87,7 @@
   flex-direction: column;
   margin: 0;
   list-style: none;
+  padding: 0 10px;
 }
 
 .menuUserListItem {
@@ -88,6 +95,15 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
+  border-radius: 12px;
+  padding: 6px 4px 6px 10px;
+  transition: background-color 0.3s;
+  margin-bottom: 4px;
+}
+
+.menuUserListItem:hover {
+  background-color: #d0c7f8;
+  cursor: pointer;
 }
 
 .menuUserName {
@@ -116,4 +132,22 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logoutButton {
+  display: flex;
+  font-family: 'Circe Rounded';
+  font-size: 16px;
+  color: #008AFF;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #d0c7f8;
+  color: #ffffff;
 }

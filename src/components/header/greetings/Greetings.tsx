@@ -6,7 +6,7 @@ const Greetings = () => {
   const userData = useAppSelector(state => state.auth.user);
 
   return (
-    <p>Добро пожаловать, {userData?.username}</p>
+    <p className={styles.greetings}>Добро пожаловать, {userData?.username}</p>
   )
 };
 

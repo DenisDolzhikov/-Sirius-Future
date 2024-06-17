@@ -1,6 +1,10 @@
 const PaymentPage = () => {
   return (
-    <div>PaymentPage</div>
+    <div>
+      <h1>
+        PaymentPage
+      </h1>
+    </div>
   )
 }
 

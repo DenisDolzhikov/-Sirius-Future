@@ -1,6 +1,10 @@
 const SimulatorsPage = () => {
   return (
-    <div>SimulatorsPage</div>
+    <div>
+      <h1>
+        SimulatorsPage
+      </h1>
+    </div>
   )
 }
 

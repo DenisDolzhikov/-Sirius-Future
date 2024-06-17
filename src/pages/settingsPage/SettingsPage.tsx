@@ -1,6 +1,10 @@
 const SettingsPage = () => {
   return (
-    <div>SettingsPage</div>
+    <div>
+      <h1>
+        SettingsPage
+      </h1>
+    </div>
   )
 }
 

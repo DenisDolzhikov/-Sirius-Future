@@ -5,8 +5,11 @@ import { Title } from './title/Title';
 import { LoginForm } from './loginForm/LoginForm';
 import { OtherLinks } from './OtherLinks/OtherLinks';
 import { LanguageSwitcher } from './languageSwitcher/LanguageSwitcher';
+import { useDocumentTitle } from 'usehooks-ts';
 
 const LoginPage = () => {
+  useDocumentTitle('Авторизация');
+  
   return (
     <>
       <section className={styles.loginPage}>

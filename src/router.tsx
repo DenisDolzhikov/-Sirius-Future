@@ -1,9 +1,11 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { lazy } from 'react';
 
 import { Layout } from './components/layout/Layout';
 import { LoginPage } from './pages/loginPage/LoginPage';
 import { HomePage } from './pages/homePage/HomePage';
-import { SchedulePage } from './pages/schedulePage/SchedulePage';
+// import { SchedulePage } from './pages/schedulePage/SchedulePage';
+const SchedulePage = lazy(() => import('./pages/schedulePage/SchedulePage.tsx'));
 import { PaymentPage } from './pages/paymentPage/PaymentPage';
 import { AdventagesPage } from './pages/adventagesPage/AdventagesPage';
 import { SimulatorsPage } from './pages/simulatorsPage/SimulatorsPage';
@@ -24,6 +26,7 @@ const router = createBrowserRouter(
       {/* <Route index element={IsLoggedIn() ? <HomePage /> : <LoginPage />} /> */}
       {/* <Route index element={<HomePage />} /> */}
       <Route index path="/login" element={<LoginPage />} />
+      <Route path="/*" element={<NotFoundPage />} />
       <Route path="/" element={<Layout />}>
         <Route
           index

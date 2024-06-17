@@ -1,6 +1,10 @@
 const PromoPage = () => {
   return (
-    <div>PromoPage</div>
+    <div>
+      <h1>
+        PromoPage
+      </h1>
+    </div>
   )
 }
 

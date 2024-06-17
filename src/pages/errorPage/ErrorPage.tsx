@@ -1,7 +1,9 @@
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
+import { useDocumentTitle } from "usehooks-ts";
 
 const ErrorPage = () => {
   const error = useRouteError();
+  useDocumentTitle('Упс, ошибка');
 
   if (isRouteErrorResponse(error)) {
     return (

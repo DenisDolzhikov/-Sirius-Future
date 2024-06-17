@@ -1,6 +1,10 @@
 const ReferalPage = () => {
   return (
-    <div>ReferalPage</div>
+    <div>
+      <h1>
+        ReferalPage
+      </h1>
+    </div>
   )
 }
 

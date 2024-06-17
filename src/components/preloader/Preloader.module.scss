@@ -7,7 +7,7 @@
   height: 48px;
   border-radius: 50%;
   animation: rotate 1s linear infinite;
-  z-index: 5;
+  z-index: 15;
 }
 .preloader::before {
   content: "";

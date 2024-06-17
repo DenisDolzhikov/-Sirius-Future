@@ -1,22 +1,15 @@
-import { Suspense, useEffect } from "react";
-import { MonthComponentContainer, MonthView } from "./monthView/MonthView";
-import { Preloader } from "../../components/preloader/Preloader";
+import { Suspense, lazy } from "react";
+import Preloader from "../../components/preloader/Preloader";
+const MonthView = lazy(() => import('./monthView/MonthView'));
 
 const SchedulePage = () => {
 
   return (
     <div>
-      <MonthComponentContainer />
+      <Suspense fallback={<Preloader />}>
+        <MonthView />
+      </Suspense>
     </div>
-
-    // <div>
-    // <Suspense fallback={<Preloader />}>
-    //   <Await resolve={<MonthView />} >
-    //     <MonthView />
-    //   </Await>
-    // </Suspense>
-    // <MonthView />
-    // </div>
   )
 }
 

@@ -12,7 +12,6 @@ import {
   Toast,
 } from '@mobiscroll/react';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
-import { Preloader } from '../../../components/preloader/Preloader';
 
 setOptions({
   theme: 'ios',
@@ -67,4 +66,5 @@ const MonthView: FC = () => {
   );
 };
 
-export { MonthView };
+// export { MonthView };
+export default MonthView;

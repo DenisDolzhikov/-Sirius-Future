@@ -13,7 +13,8 @@ type Props = {
 
 const UserMenu = ({ style }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
-  const ref = useRef(null);
+  const refUserMenu = useRef(null);
+  // const refDrowDownContainer = useRef(null);
   const userName = useAppSelector(state => state.auth.user?.username);
 
   const handleOpen = () => {
@@ -24,12 +25,12 @@ const UserMenu = ({ style }: Props) => {
     setOpen(false);
   }
 
-  useOnClickOutside(ref, handleClickOutside);
+  useOnClickOutside(refUserMenu, handleClickOutside);
 
   return (
     <nav 
       className={styles.userMenu}
-      ref={ref}
+      ref={refUserMenu}
       style={style}
     >
       <button 
@@ -43,7 +44,11 @@ const UserMenu = ({ style }: Props) => {
         />
       </button>
       {open ? (
-        <div className={styles.dropDownContainer}>
+        <div 
+          // className={[styles.dropDownContainer, open ? 'dropDownContainerActive' : ''].filter(e => !!e).join(' ')}
+          // className={`${styles.dropDownContainer} ${open ? 'dropDownContainerActive' : ''}`}
+          className={`${styles.dropDownContainer} ${'dropDownContainerActive'}`}
+        >
           <button onClick={handleOpen} className={styles.closeMenuButton}></button>
           <h3 className={styles.drowDownTitle}>Смена пользователя</h3>
           <ul className={styles.menuUsersList}>

@@ -66,5 +66,5 @@ const MonthView: FC = () => {
   );
 };
 
-export { MonthView };
-// export default MonthView;
+// export { MonthView };
+export default MonthView;

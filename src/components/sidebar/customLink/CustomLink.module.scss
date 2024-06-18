@@ -4,8 +4,11 @@
   font-weight: bold;
 }
 
-.pending {
-
+.pending,
+.transitioning {
+  background-color: #8D7FC7;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 a {

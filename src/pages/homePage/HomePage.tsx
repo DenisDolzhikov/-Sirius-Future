@@ -1,5 +1,5 @@
 import { useDocumentTitle } from "usehooks-ts";
-import Preloader from "../../components/preloader/Preloader"
+import { Preloader } from "../../components/preloader/Preloader"
 
 const HomePage = () => {
   useDocumentTitle('Главная');

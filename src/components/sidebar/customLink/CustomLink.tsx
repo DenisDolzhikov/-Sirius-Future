@@ -24,8 +24,8 @@ const CustomLink = ({ children, to, ...props}: props) => {
     // </NavLink>
     <NavLink
       to={to}
-      className={({ isActive, isPending }) =>
-        isPending ? styles.pending : isActive ? styles.active : ""
+      className={({ isActive, isPending, isTransitioning }) =>
+        isPending ? styles.pending : isTransitioning ? styles.transitioning : isActive ? styles.active : ""
       }
       {...props}
     >

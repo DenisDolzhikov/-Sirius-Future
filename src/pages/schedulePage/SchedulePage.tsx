@@ -1,16 +1,36 @@
-import { Suspense, lazy } from "react";
-import Preloader from "../../components/preloader/Preloader";
-const MonthView = lazy(() => import('./monthView/MonthView'));
+// import { Suspense, lazy } from "react";
+// const MonthView = lazy(() => import('./monthView/MonthView'));
+import { useNavigation } from "react-router-dom";
+import { MonthView } from "./monthView/MonthView";
+import { Preloader } from "../../components/preloader/Preloader";
 
-const SchedulePage = () => {
+const SchedulePage = (): JSX.Element => {
+  const navigation = useNavigation();
+  const pageLoading = navigation.state === 'loading';
+
+  console.log(pageLoading);
+  
 
   return (
     <div>
-      <Suspense fallback={<Preloader />}>
+      {pageLoading ? (
+        <Preloader />
+      ) : (
         <MonthView />
-      </Suspense>
+      )}
     </div>
   )
 }
+
+// const SchedulePage = () => {
+
+//   return (
+//     <div>
+//       <Suspense fallback={<Preloader />}>
+//         <MonthView />
+//       </Suspense>
+//     </div>
+//   )
+// }
 
 export { SchedulePage }

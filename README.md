@@ -1,6 +1,6 @@
 # React + TypeScript + Redux Toolkit + Vite
 
-Тестовое задание на позицию стажера Frontend разработчика в Antipoff Group
+Тестовое задание на позицию Junior Frontend разработчика в Sirius Future
 
 # [Посмотреть проект на codesandbox.io](https://codesandbox.io/p/github/DenisDolzhikov/Sirius-Future-testovoe/)
 
